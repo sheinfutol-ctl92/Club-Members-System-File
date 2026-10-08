@@ -1,0 +1,5 @@
+Add your existing original user-page backgrounds here with these exact names:
+login-background.png
+signup-background.png
+form-background.png
+Admin backgrounds already included in this package.

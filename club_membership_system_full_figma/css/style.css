@@ -1,0 +1,63 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;font-family:Arial,Helvetica,sans-serif;color:#170a02}
+.auth-page{min-height:100vh;overflow:hidden;background-position:center;background-repeat:no-repeat;background-size:cover}
+.login-page{background-image:url("../assets/login-background.png")}
+.signup-page{background-image:url("../assets/signup-background.png")}
+.admin-signup-page{background-image:url("../assets/admin-signup-background.png")}
+.admin-login-page{background-image:url("../assets/admin-login-background.png")}
+.auth-screen{min-height:100vh;width:100%;display:flex}
+.auth-form-panel{min-height:100vh;width:50%;display:flex;align-items:center;position:relative}
+.login-form-panel,.admin-login-form-panel{margin-left:50%;justify-content:center;padding:0 5.5%}
+.signup-form-panel,.admin-signup-form-panel{margin-left:0;justify-content:center;padding:0 5.5%}
+.auth-form-content{width:min(390px,92%);text-align:center;margin-top:-2%}
+.auth-form-content h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(30px,3vw,48px);line-height:1;color:#fff;text-shadow:1px 2px 1px #71300b;margin-bottom:5px}
+.auth-subtitle{color:#fff;font-size:12px;margin-bottom:34px;text-shadow:1px 1px #71300b}
+.mini-social{font-size:13px;font-weight:bold;margin:-20px 0 26px}
+.input-row{width:100%;height:37px;display:flex;align-items:center;position:relative;margin:0 auto 10px;border:1.5px solid #7a3008;border-radius:22px;background:rgba(224,101,12,.82)}
+.input-row:focus-within{box-shadow:0 0 0 2px rgba(255,255,255,.3)}
+.input-row input,.input-row select{width:100%;height:100%;border:0;outline:0;background:transparent;color:#080400;font-size:10px;font-weight:600;padding:0 32px 0 40px;font-family:Arial,sans-serif}
+.input-row input::placeholder{color:#080400;opacity:1}
+.field-icon{width:22px;height:22px;position:absolute;left:8px;top:50%;transform:translateY(-50%);display:flex;align-items:center;justify-content:center;font-size:15px;color:#050200}
+.input-row select{appearance:none;cursor:pointer;padding-right:30px}
+.select-row:after{content:"";position:absolute;right:12px;top:12px;width:7px;height:7px;border-right:2px solid #000;border-bottom:2px solid #000;transform:rotate(45deg);pointer-events:none}
+.login-options{width:100%;display:flex;justify-content:space-between;align-items:center;font-size:8px;font-weight:600;margin:-2px 0 15px;padding:0 14px}
+.login-options label{display:flex;align-items:center;gap:4px}.login-options input{width:9px;height:9px;accent-color:#000}
+.auth-button{width:112px;height:30px;border:0;border-radius:18px;background:#c84e00;color:#000;font-size:10px;font-weight:700;cursor:pointer}
+.auth-button:hover{background:#ad4000}
+.member-links{margin-top:17px;font-size:8px;font-weight:600;display:flex;justify-content:center;align-items:center;gap:5px}
+.member-links a,.admin-link{color:#000;text-decoration:none}.member-links a{background:#c84e00;border-radius:13px;padding:4px 12px}
+.admin-link{display:inline-block;margin-top:9px;background:#c84e00;padding:5px 12px;border-radius:13px;font-size:8px;font-weight:700}
+.signup-form-panel .auth-form-content h1,.admin-signup-form-panel .auth-form-content h1{margin-bottom:28px}
+.signup-form-panel .auth-button,.admin-signup-form-panel .auth-button{margin-top:10px}
+.signup-link{margin-top:10px}
+.form-error,.form-success{width:100%;border-radius:7px;padding:7px 10px;font-size:9px;line-height:1.4;text-align:left;margin-bottom:12px;background:rgba(255,235,235,.95);border:1px solid #7d0000;color:#7d0000}
+.form-success{background:rgba(230,255,220,.95);border-color:#236b19;color:#236b19}
+
+/* Dashboard shells use the supplied theatre-themed page artwork as a full background. */
+.portal-page{min-height:100vh;background-size:cover;background-position:center;background-attachment:fixed;padding:24px}
+.admin-dashboard-page,.member-dashboard-page{background-image:url("../assets/form-background.png")}
+.portal-shell{position:relative;max-width:1200px;min-height:calc(100vh - 48px);margin:0 auto;background:rgba(255,184,94,.22);border:1px solid rgba(117,47,0,.45);border-radius:15px;overflow:hidden;padding-top:53px;padding-left:190px}
+.portal-header{position:absolute;z-index:3;top:10px;left:12px;right:12px;height:42px;border-radius:25px;background:linear-gradient(90deg,#c84b00,#a93600);border:2px solid #793000;display:flex;align-items:center;justify-content:space-between;padding:0 18px;color:#fff;box-shadow:0 3px 7px #66300a66}
+.brand-mark{font-size:15px;display:flex;gap:8px;align-items:center}.brand-mark strong{letter-spacing:.5px}
+.header-logout,.user-welcome{font-size:10px;color:#fff;text-decoration:none;background:#8f3300;padding:6px 10px;border-radius:15px}
+.sidebar{position:absolute;top:61px;bottom:12px;left:12px;width:170px;border:2px solid #783000;border-radius:14px;background:linear-gradient(#c84b00,#a63b00);padding:12px 8px;box-shadow:0 3px 8px #57230055}
+.sidebar nav{display:flex;flex-direction:column;gap:4px}.sidebar nav a{display:flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font-size:13px;padding:10px 8px;border-radius:7px}.sidebar nav a span{font-size:11px}.sidebar nav a.active,.sidebar nav a:hover{background:#8d3100}
+.portal-main{padding:6px 14px 16px;min-width:0}
+.greeting{color:#fff;text-shadow:1px 1px #71300b;margin-bottom:16px}.greeting h1{font-size:21px;margin-bottom:6px}.greeting p{font-size:13px}
+.stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.stat-card{min-height:67px;display:grid;grid-template-columns:24px 1fr;grid-template-rows:1fr 1fr;align-items:center;background:rgba(255,221,177,.94);border:1.5px solid #8a3c0b;border-radius:8px;padding:8px 10px;box-shadow:0 2px 4px #52200044}
+.stat-card span{grid-row:1/3;font-size:18px}.stat-card strong{font-size:19px;line-height:1}.stat-card small{font-size:10px;font-weight:bold}
+.admin-panels,.member-panels{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(190px,.9fr);gap:13px}
+.portal-panel{background:rgba(255,226,190,.95);border:1.5px solid #8a3c0b;border-radius:10px;padding:12px;box-shadow:0 2px 4px #52200033}
+.portal-panel h2{font-size:12px;margin-bottom:10px;color:#5d2606}
+.activity-panel ul{list-style:none}.activity-panel li{font-size:11px;padding:7px 0;border-bottom:1px solid #dba16c}.activity-panel li:last-child{border-bottom:0}.activity-panel li b{margin-right:5px}.activity-panel li small{color:#75401f;float:right}
+.club-overview p{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #dba16c;font-size:12px}.club-overview p:last-child{border:0}
+.member-main{padding-top:5px}.welcome-banner{position:relative;min-height:135px;display:flex;align-items:center;justify-content:center;text-align:center;gap:22px;margin:0 auto 15px;width:90%;padding:14px;background:linear-gradient(110deg,rgba(255,137,41,.96),rgba(255,207,147,.94));border:1.5px solid #8a3c0b;border-radius:13px;color:#fff;text-shadow:1px 1px #a54c13}
+.welcome-banner h1{font-family:Georgia,serif;font-size:26px;line-height:1.05}.welcome-banner p{font-size:12px;margin-top:4px}.welcome-banner small{font-size:9px}.welcome-art{font-size:45px}.welcome-banner>a{position:absolute;right:10px;bottom:9px;background:#a94000;border-radius:12px;padding:5px 9px;color:#fff;text-decoration:none;font-size:9px}
+.member-stats{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:14px}.member-stats .stat-card{min-height:54px}
+.member-panels{grid-template-columns:minmax(0,1.55fr) minmax(190px,.85fr)}
+.club-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.club-cards article{min-height:88px;background:linear-gradient(135deg,#733b25,#e49a58);border:1px solid #9b4c1c;border-radius:8px;color:#fff;text-align:center;padding:9px 4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}.club-emoji{font-size:25px}.club-cards strong{font-size:11px}.club-cards small{font-size:8px}
+.event-row{display:flex;align-items:center;gap:8px;background:#ffcf98;border:1px solid #d18a4e;border-radius:7px;padding:7px;margin-bottom:7px;font-size:14px}.event-row span{font-size:10px;font-weight:bold;flex:1}.event-row small{display:block;font-size:8px;font-weight:normal;margin-top:3px}
+.admin-login-box{width:min(420px,92%);background:rgba(255,255,255,.94);padding:32px;border-radius:12px;margin:12vh auto;text-align:center}.admin-login-box h1{font-family:Georgia,serif;margin-bottom:10px}.admin-login-box h2{margin:8px 0 22px}.admin-input{text-align:left;margin-bottom:14px}.admin-input label{display:block;margin-bottom:6px;font-weight:bold}.admin-input input{width:100%;padding:11px;border:1px solid #999;border-radius:7px}.back-link{display:inline-block;margin-top:18px;color:#c84e00;font-weight:bold;text-decoration:none}
+@media(max-width:850px){.portal-page{padding:10px}.portal-shell{padding-left:145px}.sidebar{width:125px}.sidebar nav a{gap:6px;padding:9px 4px}.sidebar nav a span{font-size:10px}.stat-grid{gap:6px}.stat-card{padding:7px 5px}.admin-panels,.member-panels{grid-template-columns:1fr}.portal-main{padding-right:8px;padding-left:8px}}
+@media(max-width:650px){.auth-screen{justify-content:center;background:rgba(0,0,0,.12)}.auth-form-panel,.login-form-panel,.signup-form-panel,.admin-login-form-panel,.admin-signup-form-panel{width:94%;margin-left:0;padding:20px}.auth-form-content{width:min(360px,100%)}.portal-shell{padding-left:0;padding-top:58px}.sidebar{position:relative;top:auto;left:auto;bottom:auto;width:auto;margin:8px 10px;padding:5px}.sidebar nav{flex-direction:row;flex-wrap:wrap;justify-content:center}.sidebar nav a{padding:7px}.sidebar nav a span{font-size:9px}.portal-header{left:8px;right:8px}.portal-main{padding:8px}.stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.member-stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat-card strong{font-size:16px}.welcome-banner{width:100%;gap:8px}.welcome-banner h1{font-size:21px}.welcome-art{font-size:32px}.club-cards{gap:5px}.club-cards strong{font-size:9px}.club-cards small{font-size:7px}}
